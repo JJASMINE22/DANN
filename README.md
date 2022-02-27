@@ -17,13 +17,13 @@ Opencv-contrib-python==4.5.1.48
 
 ## 模型结构
 Feature_extractor
-![image]
+![image](https://github.com/JJASMINE22/DANN/blob/master/model_structure/feature_extractor/feature_extractor.png)
 
 Domain_classifier
-![image]
+![image](https://github.com/JJASMINE22/DANN/blob/master/model_structure/domain_classifier/domain_classifier.png)
 
 Label_predictor
-![image]
+![image](https://github.com/JJASMINE22/DANN/blob/master/model_structure/label_predictor/label_predictor.png)
 
 ## 注意事项
 1. DANN结构擅于避免模型过学习 
