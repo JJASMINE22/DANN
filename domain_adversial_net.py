@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 '''
-@Project ：CNN_LSTM
-@File    ：train.py
+@Project ：DANN
+@File    ：domain_adversial_net.py
 @IDE     ：PyCharm 
 @Author  ：XinYi Huang
 '''
@@ -27,7 +27,7 @@ class DANN():
     def __init__(self,
                  input_shape,
                  cls_num,
-                 lr=[0.001, 0.0001, 0.005],
+                 lr,
                  **kwargs):
         """
         :param input_shape: 图像输入形状
@@ -175,8 +175,3 @@ class DANN():
 
         self.test_lp_loss(lp_loss)
         self.test_lp_accuracy(target[1], class_pred)
-
-
-if __name__ == '__main__':
-
-    dann = DANN(input_shape=(28, 28, 3), cls_num=10)
